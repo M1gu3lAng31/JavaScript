@@ -9,7 +9,7 @@ function eventListener() {
 function obtenerArea() {
 
     let ladoA = Number(document.getElementById('ladoA').value);
-    let ladoB = Number(document.getElementById('ladoB'.value));
+    let ladoB = Number(document.getElementById('ladoB').value);
     let ladoC = Number(document.getElementById('ladoC').value);
 
 
