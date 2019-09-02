@@ -11,8 +11,8 @@ function calcular() {
     let ladoB = Number(document.getElementById('ladoB').value);
     let ladoC = Number(document.getElementById('ladoC').value);
 
-    let resultado = 0;
-    let semiperimetro = 0;
+    let resultado = 0,
+        semiperimetro = 0;
 
     semiperimetro = ((ladoA + ladoB + ladoC) / 2);
     resultado = Math.sqrt(semiperimetro * (semiperimetro - ladoA) * (semiperimetro - ladoB) * (semiperimetro - ladoC));
