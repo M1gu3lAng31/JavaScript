@@ -8,14 +8,21 @@ function eventListener() {
 }
 
 function calcular() {
-    let metroCubico = Number(document.getElementById('cantidadMetros').value);
-    let precioCubico = Number(document.getElementById('precioMetros').value);
+    let largo = Number(document.getElementById('largo').value);
+    let ancho = Number(document.getElementById('ancho').value);
+    let profundidad = Number(document.getElementById('profundidad').value);
+    let precioLitro = Number(document.getElementById('precioLitro').value);
 
-    let resultado = 0;
+    let resultado = 0,
+        total = 0;
 
-    resultado = metroCubico * precioCubico;
+    resultado = ((largo * ancho * profundidad) * 1000);
+    total = resultado * precioLitro;
 
     let imprimirResultado = document.getElementById('resultado');
+    let imprimirPrecio = document.getElementById('resultadoPrecio')
 
     imprimirResultado.innerHTML = resultado;
+    imprimirPrecio.innerHTML = total;
+
 }

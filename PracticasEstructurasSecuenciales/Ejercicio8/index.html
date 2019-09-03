@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Conagua</title>
+    <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,63 +17,61 @@
         <div class="jumbotron">
 
             <div class="row">
-                <div class="col-6">
+                <div class="col-12">
                     <div class="form-group">
-                        <label for="">Largo de la alberca</label>
-                        <input type="number" id="largo" class="form-control" placeholder="largo de la alberca" aria-describedby="helpId">
+                        <label for="">Duración del viaje (días)</label>
+                        <input type="number" id="numDias" class="form-control" placeholder="Numero de días" aria-describedby="helpId">
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-6">
+                <div class="col-12">
                     <div class="form-group">
-                        <label for="">Ancho de la alberca </label>
-                        <input type="number" id="ancho" class="form-control" placeholder="Ancho de la Alberca" aria-describedby="helpId">
+                        <label for="">Costo Hotel</label>
+                        <input type="number" id="costoHotel" class="form-control" placeholder="Costo del hotel" aria-describedby="helpId">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="">Costo Comida</label>
+                        <input type="number" id="costoComida" class="form-control" placeholder="Costo de comida" aria-describedby="helpId">
 
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-6">
-                    <div class="form-group">
-                        <label for="">Profundidad de la alberca </label>
-                        <input type="number" id="profundidad" class="form-control" placeholder="Profundidad de la Alberca" aria-describedby="helpId">
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-6">
-                    <div class="form-group">
-                        <label for="">Precio por litro </label>
-                        <input type="number" id="precioLitro" class="form-control" placeholder="Precio litro" aria-describedby="helpId">
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-6">
+                <div class="col-12">
                     <button type="button" id="btnCalcular" class="btn btn-outline-dark btn-lg btn-block">Calcular</button>
                 </div>
             </div>
 
-            <div class="row mt-3">
-                <div class="col-6">
+            <div class="row mt-2">
+                <div class="col-12">
                     <div class="alert alert-success" role="alert">
-                        <h4 class="alert-heading">Litros necesarios:
-                            <span id="resultado">0</span>L</h4>
+                        <h4 class="alert-heading">El total será de: </h4>
+                        <span id="resultado"></span>
                         <hr>
-                        <h4>Total a pagar $
-                            <span id="resultadoPrecio">0</span></h4>
+                        <h4>Gastos hotel</h4>
+                        <span id="resultadoHotel"></span>
+                        <hr>
+                        <h4>Gastos comida</h4>
+                        <span id="resultadoComida"></span>
+                        <hr>
+                        <h4>Gastos varios</h4>
+                        <span id="resultadoGastos"></span>
+
 
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+
 
 
 
@@ -85,8 +83,6 @@
 
     <!-- Optional JavaScript -->
     <script src="./app.js"></script>
-
-
 </body>
 
 </html>
