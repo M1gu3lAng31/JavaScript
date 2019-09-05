@@ -4,7 +4,14 @@ let total = document.getElementById('total');
 eventListener();
 
 function eventListener() {
+    total.addEventListener('blur', validarDatos);
     btnCalcular.addEventListener('click', calcular);
+}
+
+function validarDatos(event) {
+    if (isNaN(event.target.value)) {
+        event.target.focus();
+    }
 }
 
 function calcular() {

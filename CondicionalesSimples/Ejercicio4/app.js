@@ -6,7 +6,21 @@ let precioArt = document.getElementById('precioArticulo');
 eventListener();
 
 function eventListener() {
+    clave.addEventListener('blur', validarDatosNumeros);
+    precioArt.addEventListener('blur', validarDatosNumeros);
     btnCalcular.addEventListener('click', calcular);
+}
+
+function validarDatosNumeros(event) {
+    if (isNaN(event.target.value)) {
+        event.target.focus();
+    }
+}
+
+function validarDatosLetras(event) {
+    if (isNaN(event.target.value)) {
+
+    } else { event.target.focus(); }
 }
 
 function calcular() {

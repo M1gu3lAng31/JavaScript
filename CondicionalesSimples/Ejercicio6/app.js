@@ -7,7 +7,26 @@ let nombre2 = document.getElementById('nombre2');
 eventListener();
 
 function eventListener() {
+    nombre1.addEventListener('blur', validarDatosLetras);
+    nombre2.addEventListener('blur', validarDatosLetras);
+    edad1.addEventListener('blur', validarDatosNumeros);
+    edad2.addEventListener('blur', validarDatosNumeros);
     btnCalcular.addEventListener('click', calcular);
+}
+
+
+function validarDatosLetras(event) {
+    if (isNaN(event.target.value)) {
+
+    } else {
+        event.target.focus();
+    }
+}
+
+function validarDatosNumeros() {
+    if (isNaN(event.target.value)) {
+        event.target.focus();
+    }
 }
 
 function calcular() {
