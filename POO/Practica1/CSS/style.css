@@ -1,0 +1,27 @@
+body {
+    display: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    /* overflow-x: hidden; */
+}
+
+.contenedor {
+    background: rgb(0, 81, 212);
+    /* width: 90vw; */
+    height: 90vh;
+    position: relative;
+    /* background: url("./Imagenes/nyan-cat.gif"); */
+    /* overflow: hidden; */
+}
+
+.contenedor span {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: rgb(209, 0, 0);
+    display: block;
+    position: absolute;
+}
