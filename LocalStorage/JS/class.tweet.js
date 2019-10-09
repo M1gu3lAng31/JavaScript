@@ -45,7 +45,9 @@ class Tweet {
     addTweetLS(tweet) {
         let tweets;
         tweets = this.getLocalStorage();
-        tweets.push();
+        tweets.push(tweet);
+
+        localStorage.setItem('tweets', JSON.stringify(tweets));
 
     }
 
@@ -62,6 +64,18 @@ class Tweet {
 
     }
 
+    removeTweetLocalStorage(tweetDelete) {
 
+        let tweets = this.getLocalStorage();
+
+        tweets.forEach(function(tweet, index) {
+            if (tweetDelete === tweet) {
+                tweets.splice(index, 1);
+            }
+        });
+
+        localStorage.setItem('tweets', JSON.stringify(tweets));
+
+    }
 
 }
