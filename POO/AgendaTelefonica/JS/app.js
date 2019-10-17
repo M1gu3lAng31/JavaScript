@@ -1,4 +1,5 @@
 const listaContactos = document.querySelector('#lista-contactos tbody');
+let tablaContactos = document.getElementById('tabla-contactos');
 // const listaContactosTelefono = document.getElementById('lista-contactos-telefono');
 // const listaContactosFecha = document.getElementById('lista-contactos-fecha');
 
@@ -9,6 +10,7 @@ eventListener();
 
 function eventListener() {
     document.addEventListener('DOMContentLoaded', mostrarContactos);
+    tablaContactos = document.getElementById('click', eliminarContacnto);
     document.querySelector('#formulario').addEventListener('submit', agregarContacto);
 }
 
@@ -30,4 +32,12 @@ function agregarContacto() {
 
 function mostrarContactos() {
     agendaClass.mostrarAgendaLS();
+}
+
+function eliminarContacnto(event) {
+    let puntero;
+
+    puntero = event.parentElement;
+    console.log(puntero);
+
 }

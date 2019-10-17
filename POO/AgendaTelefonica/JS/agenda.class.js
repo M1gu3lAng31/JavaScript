@@ -36,7 +36,8 @@ class Agenda {
         row.innerHTML = `
         <td>${datosAgenda.contactoNombre}</td>
         <td>${datosAgenda.contactoTelefono}</td>
-        <td>${datosAgenda.contactoRegistro}</td>`
+        <td>${datosAgenda.contactoRegistro}</td>
+        <td><span class="badge badge-pill badge-danger text-light borrar-curso">X</span</td>`
 
         listaContactos.appendChild(row);
     }
@@ -50,7 +51,8 @@ class Agenda {
             row.innerHTML = `
         <td>${contacto.contactoNombre}</td>
         <td>${contacto.contactoTelefono}</td>
-        <td>${contacto.contactoRegistro}</td>`
+        <td>${contacto.contactoRegistro}</td>
+        <td><span class="badge badge-pill badge-danger text-light borrar-curso">X</span</td>`
 
             listaContactos.appendChild(row);
 

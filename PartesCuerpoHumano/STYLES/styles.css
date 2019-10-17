@@ -1,0 +1,28 @@
+.jumbotron {
+    width: 100% !important;
+    height: 100% !important;
+    background: rgb(255, 255, 255) !important;
+    text-align: center;
+}
+
+.ingles,
+.spanish {
+    position: relative;
+    height: 25%;
+    text-align: left !important;
+}
+
+
+/* .ingles>span,
+.spanish>span {
+    text-align: center !important;
+    margin-top: 50% !important;
+} */
+
+#nombreIngles,
+#nombreEspañol {
+    position: absolute;
+    display: block;
+    width: auto;
+    height: auto;
+}
